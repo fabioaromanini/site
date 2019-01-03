@@ -13,8 +13,8 @@ class App extends Component {
               target="_blank"
               rel="noopener noreferrer"
             ><img src={gitIcon}  alt="github repository icon" />
+            github
             </a>
-            <span>github</span>
           </div>
         </header>
       </div>
