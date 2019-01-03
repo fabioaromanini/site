@@ -1,9 +1,9 @@
 steps:
   - name: 'gcr.io/cloud-builders/npm'
-    entrypoint: './react-site/npm'
+    entrypoint: './react-site'
     args: ['install']
   - name: 'gcr.io/cloud-builders/npm'
-    entrypoint: './react-site/npm'
+    entrypoint: './react-site'
     args: ['run', 'build']
   # - name: 'gcr.io/cloud-builders/gsutil'
   #   args: ["rsync", "-r", "-c", "-d", "react/build", "gs://www.fabioaromanini.com"]
