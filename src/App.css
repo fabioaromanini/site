@@ -7,15 +7,22 @@
 }
 
 .links {
-  display: flex;
-  align-items: center;
-  min-width: 20vh;
-  justify-content: space-evenly;
   font-size: 0.3em;
   margin-bottom: 5vw;
+  display: flex;
   align-self: flex-end;
+  flex-direction: column;
+}
+
+.links a { 
+  min-width: 18vh;
+  margin-top: 1.5vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  text-decoration: none;
 }
 
 .links * {
-  max-height: 2em;
+  max-height: 1.5em;
 }

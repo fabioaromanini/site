@@ -8,7 +8,7 @@ class App extends Component {
       <div className="App">
         <header id="landing">
           <div className="links">
-            <a
+          <a
               href="https://github.com/fabioaromanini/site"
               target="_blank"
               rel="noopener noreferrer"
