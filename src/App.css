@@ -7,22 +7,23 @@
 }
 
 .links {
-  font-size: 0.3em;
-  margin-bottom: 5vw;
+  margin-bottom: 2vw;
+  min-width: 30%;
   display: flex;
   align-self: flex-end;
-  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 .links a { 
-  min-width: 18vh;
-  margin-top: 1.5vh;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
   text-decoration: none;
 }
 
 .links * {
-  max-height: 1.5em;
+  max-height: 10vh;
+}
+
+@media only screen and (max-width: 600px) {
+  .links {
+    min-width: 80%;
+  }
 }
