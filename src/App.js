@@ -8,18 +8,19 @@ class App extends Component {
     return (
       <div className="App">
         <header id="landing">
+          <h1>Fabio Augusto Romanini Pinto</h1>
           <div className="links">
-          <a
+            <a
               href="https://github.com/fabioaromanini/site"
               target="_blank"
               rel="noopener noreferrer"
-            ><img src={gitIcon}  alt="github repository icon" />
+            ><img src={gitIcon} alt="github repository icon" />
             </a>
-          <a
+            <a
               href="https://www.linkedin.com/in/fabioaromanini/"
               target="_blank"
               rel="noopener noreferrer"
-            ><img src={linkedinIcon}  alt="linkedin icon" />
+            ><img src={linkedinIcon} alt="linkedin icon" />
             </a>
           </div>
         </header>

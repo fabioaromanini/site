@@ -3,7 +3,14 @@
   min-height: 100vh;
   color: white;
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   justify-content: space-around;
+  text-align: center;
+}
+
+#landing h1 {
+  font-size: 6vw;
 }
 
 .links {
