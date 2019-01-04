@@ -10,14 +10,16 @@ class App extends Component {
         <header id="landing">
           <h1>fabioaromanini</h1>
           <div id="landing-content">
-            <p>An{' '}
+            <p>an{' '}
             <a
                 href="https://github.com/fabioaromanini/site"
                 target="_blank"
                 rel="noopener noreferrer"
-                >open source
+                >under development
             </a>
-            {' '}personal site built on react and google cloud</p>
+            {' '}personal website, written in react
+            {' '}and hosted on google cloud platform.
+            </p>
           </div>
           <div className="links">
             <a
