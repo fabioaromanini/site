@@ -1,3 +1,12 @@
 language: node_js
 node_js:
   - "lts/dubnium"
+
+deploy:
+  provider: s3
+  access_key_id: $DEPLOYER_ACCESS_KEY
+  secret_access_key: $DEPLOYER_ACCESS_KEY
+  bucket: www.fabioaromanini.com
+  skip_cleanup: true
+  local_dir: build
+  region: "us-east-1"
