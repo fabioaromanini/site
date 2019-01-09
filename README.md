@@ -1,2 +1,4 @@
 # fabioaromanini.com
-A personal website written in React.js, hosted on a multiregional Google Cloud Platform's bucket, continuously deployed with Cloud Build.
+[![Build Status](https://travis-ci.org/fabioaromanini/site.svg?branch=master)](https://travis-ci.org/fabioaromanini/site)
+
+A personal website written in React.js and hosted on aws s3
