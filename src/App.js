@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
+
 import gitIcon from './images/giticon.png';
 import linkedinIcon from './images/linkedinicon.png';
+
 import './App.css';
+import Content from './content';
 
 class App extends Component {
   render() {
@@ -9,19 +12,7 @@ class App extends Component {
       <div className="App">
         <header id="landing">
           <h1>fabioaromanini</h1>
-          <div id="landing-content">
-            <p>an{' '}
-            <a
-                href="https://github.com/fabioaromanini/site"
-                target="_blank"
-                rel="noopener noreferrer"
-                >under development
-            </a>
-            {' '}personal website, written in react
-            {' '}hosted on aws s3,
-            {' '}delivered using cloud front.
-            </p>
-          </div>
+          <Content />
           <div className="links">
             <a
               href="https://github.com/fabioaromanini"
