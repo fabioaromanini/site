@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import gitIcon from './giticon.png';
-import linkedinIcon from './linkedinicon.png';
+import gitIcon from './images/giticon.png';
+import linkedinIcon from './images/linkedinicon.png';
 import './App.css';
 
 class App extends Component {
