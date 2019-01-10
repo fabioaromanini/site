@@ -6,6 +6,7 @@ import linkedinIcon from './images/linkedinicon.png';
 import './App.css';
 import Content from './content';
 
+// eslint-disable-next-line react/prefer-stateless-function
 class App extends Component {
   render() {
     return (
@@ -15,16 +16,18 @@ class App extends Component {
           <Content />
           <div className="links">
             <a
-              href="https://github.com/fabioaromanini"
+              href="https://github.com/fabioaromanini/site"
               target="_blank"
               rel="noopener noreferrer"
-              ><img src={gitIcon} alt="github repository icon" />
+            >
+              <img src={gitIcon} alt="github repository icon" />
             </a>
             <a
               href="https://www.linkedin.com/in/fabioaromanini/"
               target="_blank"
               rel="noopener noreferrer"
-              ><img src={linkedinIcon} alt="linkedin icon" />
+            >
+              <img src={linkedinIcon} alt="linkedin icon" />
             </a>
           </div>
         </header>
