@@ -1,7 +1,5 @@
 #landing {
   height: 100vh;
-  background-color: #483538;
-  color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
