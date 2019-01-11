@@ -1,17 +1,36 @@
 import React from 'react';
 
+import gitIcon from './images/giticon.png';
+import linkedinIcon from './images/linkedinicon.png';
+
 const styles = {
   login: {
     height: '100vh',
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
+    flexDirection: 'column',
   },
 };
 
 export default () => (
   <div style={styles.login}>
     <h1>Login</h1>
-    <div />
+    <div className="links">
+      <a
+        href="https://github.com/fabioaromanini/site"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img src={gitIcon} alt="github repository icon" />
+      </a>
+      <a
+        href="https://www.linkedin.com/in/fabioaromanini/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img src={linkedinIcon} alt="linkedin icon" />
+      </a>
+    </div>
   </div>
 );
