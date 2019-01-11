@@ -16,8 +16,9 @@ export default () => (
       <ul>
         <li>mobile first</li>
         <li>written in react</li>
+        <li>built and deployed with travis</li>
         <li>hosted on aws s3</li>
-        <li>delivered using cloud front</li>
+        <li>distributed using cloud front</li>
       </ul>
     </div>
     <div className="links">
