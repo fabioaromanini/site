@@ -17,6 +17,9 @@ export default () => (
         <li>built and deployed with travis</li>
         <li>hosted on aws s3</li>
         <li>distributed using cloud front</li>
+        <li>
+          <a href="#login">login using cognito</a>
+        </li>
       </ul>
     </div>
   </div>

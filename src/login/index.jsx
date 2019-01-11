@@ -3,6 +3,8 @@ import React from 'react';
 import gitIcon from './images/giticon.png';
 import linkedinIcon from './images/linkedinicon.png';
 
+import './login.css';
+
 const styles = {
   login: {
     height: '100vh',
@@ -14,7 +16,7 @@ const styles = {
 };
 
 export default () => (
-  <div style={styles.login}>
+  <div id="login" style={styles.login}>
     <h1>Login</h1>
     <div className="links">
       <a

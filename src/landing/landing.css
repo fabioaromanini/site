@@ -17,16 +17,6 @@
   text-align: center;
 }
 
-.links {
-  width: 100%;
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.links img {
-  max-height: 8vh;
-}
-
 @media screen and (min-width: 910px) {
   #landing h1 {
     font-size: 4em;
