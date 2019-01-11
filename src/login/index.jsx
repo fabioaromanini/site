@@ -22,6 +22,8 @@ export default () => {
     loginInput: {
       minWidth: '40vw',
       marginLeft: '3vw',
+      borderRadius: '10px',
+      paddingLeft: '0.5em',
     },
     links: {
       width: '100%',
