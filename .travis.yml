@@ -1,12 +1,12 @@
 language: node_js
 node_js:
-  - "lts/dubnium"
+  - 'lts/dubnium'
 
 before_script:
-  - yarn lint
-  - yarn test
+  - npm run lint
+  - npm run test
 
-script: yarn build
+script: npm run build
 
 deploy:
   - provider: s3
@@ -15,16 +15,16 @@ deploy:
     bucket: www.fabioaromanini.com
     skip_cleanup: true
     local_dir: build
-    region: "us-east-1"
+    region: 'us-east-1'
     on:
       branch: master
 
   - provider: s3
     access_key_id: $DEPLOYER_ACCESS_KEY
     secret_access_key: $DEPLOYER_SECRET_KEY
-    bucket: staging.fabioaromanini.com
+    bucket: dev.fabioaromanini.com
     skip_cleanup: true
     local_dir: build
-    region: "us-east-1"
+    region: 'us-east-1'
     on:
       branch: develop
