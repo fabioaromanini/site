@@ -1,7 +1,7 @@
 #portfolio {
   height: 100vh;
   background-color: #353b48;
-  color: white;
+  color: #cacaca;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -19,5 +19,17 @@
   max-height: 8vh;
 }
 
+#itens > li {
+  margin-top: 1em;
+}
+
 @media screen and (min-width: 910px) {
+  #portfolio h2 {
+    font-size: 4em;
+  }
+
+  #container {
+    max-width: 80%;
+    font-size: 2em;
+  }
 }
