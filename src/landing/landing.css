@@ -1,7 +1,7 @@
 #landing {
   height: 100vh;
   background-color: #353b48;
-  color: white;
+  color: #cacaca;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -19,14 +19,23 @@
   text-align: center;
 }
 
-.links {
-  width: 100%;
-  display: flex;
-  justify-content: space-evenly;
+.about {
+  background-color: #cacaca;
+  border-radius: 1em;
+  color: #353b48;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  padding-bottom: 1em;
+  padding-top: 0.5em;
+  margin-bottom: 1em;
 }
 
-.links img {
-  max-height: 8vh;
+.about > p {
+  text-align: center;
+}
+
+#arrow {
+  height: 4em;
 }
 
 @media screen and (min-width: 910px) {
@@ -37,6 +46,11 @@
   .content {
     font-size: 2em;
   }
+
+  .about {
+    font-size: 2em;
+  }
+
   .content p {
     max-width: 80%;
   }
