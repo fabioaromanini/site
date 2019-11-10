@@ -10,16 +10,19 @@ export default () => (
     <h1>fabioaromanini</h1>
     <div className="content">
       <p>
-        A playground for some technologies and concepts I'm studying. Currently,
-        this website is:
+        Data engineer with experience in software engineering and cloud
+        infrastructure.
       </p>
-      <ul>
-        <li>mobile first</li>
-        <li>written in react</li>
-        <li>built and deployed with travis</li>
-        <li>hosted on aws s3</li>
-        <li>distributed using cloud front</li>
-      </ul>
+      <div className="about">
+        <p>currently this site is</p>
+        <ul>
+          <li>mobile first</li>
+          <li>written in react</li>
+          <li>built and deployed with travis</li>
+          <li>hosted on aws s3</li>
+          <li>distributed using cloud front</li>
+        </ul>
+      </div>
     </div>
     <div className="links">
       <a

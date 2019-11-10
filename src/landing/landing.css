@@ -1,7 +1,7 @@
 #landing {
   height: 100vh;
   background-color: #353b48;
-  color: white;
+  color: #cacaca;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -27,6 +27,14 @@
 
 .links img {
   max-height: 8vh;
+}
+
+.about {
+  margin-top: 1em;
+  background-color: #cacaca;
+  border-radius: 1em;
+  color: #353b48;
+  padding: 1em;
 }
 
 @media screen and (min-width: 910px) {
