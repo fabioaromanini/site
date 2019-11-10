@@ -13,16 +13,16 @@ export default () => (
         Data engineer with experience in software engineering and cloud
         infrastructure.
       </p>
-      <div className="about">
-        <p>currently this site is</p>
-        <ul>
-          <li>mobile first</li>
-          <li>written in react</li>
-          <li>built and deployed with travis</li>
-          <li>hosted on aws s3</li>
-          <li>distributed using cloud front</li>
-        </ul>
-      </div>
+    </div>
+    <div className="about">
+      <p>this site is</p>
+      <ul>
+        <li>mobile first</li>
+        <li>written in react</li>
+        <li>built and deployed with travis</li>
+        <li>hosted on aws s3</li>
+        <li>distributed using cloud front</li>
+      </ul>
     </div>
     <div className="links">
       <a

@@ -1,7 +1,7 @@
 #landing {
   height: 100vh;
   background-color: #353b48;
-  color: #cacaca;
+  color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -30,11 +30,17 @@
 }
 
 .about {
-  margin-top: 1em;
-  background-color: #cacaca;
+  background-color: white;
   border-radius: 1em;
   color: #353b48;
-  padding: 1em;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  padding-bottom: 1em;
+  padding-top: 1em;
+}
+
+.about > p {
+  text-align: center;
 }
 
 @media screen and (min-width: 910px) {
@@ -45,6 +51,11 @@
   .content {
     font-size: 2em;
   }
+
+  .about {
+    font-size: 2em;
+  }
+
   .content p {
     max-width: 80%;
   }
