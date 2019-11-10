@@ -1,0 +1,23 @@
+#portfolio {
+  height: 100vh;
+  background-color: #353b48;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 10vw;
+}
+
+.links {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.links img {
+  max-height: 8vh;
+}
+
+@media screen and (min-width: 910px) {
+}
