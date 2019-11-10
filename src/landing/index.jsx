@@ -24,7 +24,7 @@ export default () => (
       </ul>
     </div>
     <a href="#portfolio">
-      <img src={arrow} id="arrow" />
+      <img src={arrow} id="arrow" alt="arrow pointing down" />
     </a>
   </div>
 );
