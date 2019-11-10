@@ -1,5 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from 'react';
+import arrow from './images/gif-bounce-arrow.gif';
 
 import './landing.css';
 
@@ -22,5 +23,8 @@ export default () => (
         <li>distributed using cloud front</li>
       </ul>
     </div>
+    <a href="#portfolio">
+      <img src={arrow} id="arrow" />
+    </a>
   </div>
 );
