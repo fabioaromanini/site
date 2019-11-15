@@ -7,8 +7,11 @@ export default props => {
         textAlign: 'center',
         maxWidth: '70%',
         marginLeft: '15%',
-        marginBottom: '1rem',
-        paddingBottom: '23px',
+        minHeight: '40vh',
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: 'space-evenly',
       }}
     >
       <div>{props.name}</div>
