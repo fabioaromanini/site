@@ -5,31 +5,28 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
-  padding: 0 10vw;
+  justify-content: space-between;
 }
 
-.links {
+#portfolio-title {
+  padding-top: 1em;
+}
+
+#links {
   width: 100%;
+  text-align: center;
   display: flex;
+  flex-direction: row;
   justify-content: space-evenly;
+  padding-bottom: 2em;
 }
 
-.links img {
-  max-height: 8vh;
-}
-
-#itens > li {
-  margin-top: 1em;
+#links img {
+  max-height: 10vh;
 }
 
 @media screen and (min-width: 910px) {
-  #portfolio h2 {
+  #portfolio-title {
     font-size: 4em;
-  }
-
-  #container {
-    max-width: 80%;
-    font-size: 2em;
   }
 }
