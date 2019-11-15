@@ -4,7 +4,12 @@
 }
 
 #avatar {
-  padding: 2em 0 2em 0;
+  padding: 2em 0 0 0;
+}
+
+#avatar img {
+  border-radius: 50%;
+  max-height: 25vh;
 }
 
 #title {
