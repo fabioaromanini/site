@@ -3,10 +3,15 @@ import React from 'react';
 import './project.css';
 
 export default props => {
+  const { name, description, bulletPoints } = props;
+
   return (
     <div className="project-container">
-      <div>{props.name}</div>
-      <div>{props.description}</div>
+      <h4>{name}</h4>
+      <div>{description}</div>
+      <ul className="reseted-list">
+        {bulletPoints && bulletPoints.map(bp => <li>{bp}</li>)}
+      </ul>
     </div>
   );
 };

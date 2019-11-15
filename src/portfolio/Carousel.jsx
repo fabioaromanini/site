@@ -12,16 +12,19 @@ const items = [
     key: 1,
     name: 'lorem',
     description: 'asdsadsadsad asd sadsadsa dsada sdasd sadsad',
+    bulletPoints: ['ea', 'ae', 'aa', 'ee'],
   },
   {
     key: 2,
     name: 'stock',
     description: 'asdsadsadsad asd sadsadsa dsada sdasd sadsad',
+    bulletPoints: ['ea', 'ae', 'aa', 'ee'],
   },
   {
     key: 3,
     name: 'site',
     description: 'asdsadsadsad asd sadsadsa dsada sdasd sadsad',
+    bulletPoints: ['ea', 'ae', 'aa', 'ee'],
   },
 ];
 
@@ -53,7 +56,11 @@ const CarouselAdapter = props => {
         onExited={() => setAnimating(false)}
         key={item.key}
       >
-        <Project name={item.name} description={item.description} />
+        <Project
+          name={item.name}
+          description={item.description}
+          bulletPoints={item.bulletPoints}
+        />
       </CarouselItem>
     );
   });
