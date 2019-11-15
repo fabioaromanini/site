@@ -21,10 +21,22 @@ export default () => (
     </Row>
     <Row>
       <Col xs="12" id="about">
-        <p>
-          Data engineer with experience in software engineering and cloud
-          infrastructure.
-        </p>
+        Software Engineeer with professional experience in data engineering,
+        microservices and cloud infrastructure.
+      </Col>
+    </Row>
+    <Row>
+      <Col xs="12">
+        <h4 id="skills">highlighted skills</h4>
+        <ul id="skills-list">
+          <li>
+            - <a href="https://serverless.com">Serverless Framework</a>
+          </li>
+          <li>- AWS DynamoDB</li>
+          <li>- GCP BigQuery</li>
+          <li>- Docker</li>
+          <li>- English, portuguese & spanish</li>
+        </ul>
       </Col>
     </Row>
     <Row>

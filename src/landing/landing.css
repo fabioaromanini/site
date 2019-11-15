@@ -1,6 +1,10 @@
 #landing {
   height: 100vh;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
 
 #avatar {
@@ -9,27 +13,47 @@
 
 #avatar img {
   border-radius: 50%;
-  max-height: 25vh;
+  max-height: 20vh;
 }
 
 #title {
-  padding: 2em 0 2em 0;
+  padding: 2em 0 0 0;
 }
 
 #about {
-  padding: 2em 0 2em 0;
-}
-
-.about {
-  background-color: #cacaca;
-  border-radius: 1em;
-  color: #353b48;
-  text-align: left;
+  padding: 0 1em 2em 1em;
 }
 
 #arrow {
   height: 4em;
+  padding-bottom: 1em;
+}
+
+#skills {
+  padding: 0 0 1em 0;
+}
+
+#skills-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
 @media screen and (min-width: 910px) {
+  #avatar {
+    padding: 3em 0 0 0;
+  }
+
+  #title h1 {
+    padding: 0 0 0.5em 0;
+    font-size: 4em;
+  }
+
+  #about {
+    max-width: 40vw;
+  }
+
+  #skills {
+    font-size: 2em;
+  }
 }
