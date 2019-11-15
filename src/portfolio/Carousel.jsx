@@ -5,32 +5,14 @@ import {
   CarouselControl,
   CarouselItem,
 } from 'reactstrap';
-import Project from './project';
+import axios from 'axios';
 
-const items = [
-  {
-    key: 1,
-    name: 'lorem',
-    description: 'asdsadsadsad asd sadsadsa dsada sdasd sadsad',
-    bulletPoints: ['ea', 'ae', 'aa', 'ee'],
-  },
-  {
-    key: 2,
-    name: 'stock',
-    description: 'asdsadsadsad asd sadsadsa dsada sdasd sadsad',
-    bulletPoints: ['ea', 'ae', 'aa', 'ee'],
-  },
-  {
-    key: 3,
-    name: 'site',
-    description: 'asdsadsadsad asd sadsadsa dsada sdasd sadsad',
-    bulletPoints: ['ea', 'ae', 'aa', 'ee'],
-  },
-];
+import Project from './project';
 
 const CarouselAdapter = props => {
   const [activeIndex, setActiveIndex] = useState(0);
   const [animating, setAnimating] = useState(false);
+  const [items, setItems] = useState([]);
 
   const next = () => {
     if (animating) return;
@@ -49,21 +31,11 @@ const CarouselAdapter = props => {
     setActiveIndex(newIndex);
   };
 
-  const slides = items.map(item => {
-    return (
-      <CarouselItem
-        onExiting={() => setAnimating(true)}
-        onExited={() => setAnimating(false)}
-        key={item.key}
-      >
-        <Project
-          name={item.name}
-          description={item.description}
-          bulletPoints={item.bulletPoints}
-        />
-      </CarouselItem>
-    );
-  });
+  axios
+    .get('https://dx4d3c4h60.execute-api.us-east-1.amazonaws.com/dev/get')
+    .then(res => {
+      setItems(res.data);
+    });
 
   return (
     <Carousel
@@ -77,7 +49,21 @@ const CarouselAdapter = props => {
         activeIndex={activeIndex}
         onClickHandler={goToIndex}
       />
-      {slides}
+      {items.map(item => {
+        return (
+          <CarouselItem
+            onExiting={() => setAnimating(true)}
+            onExited={() => setAnimating(false)}
+            key={item.name}
+          >
+            <Project
+              name={item.name}
+              description={item.description}
+              bulletPoints={item.bulletPoints}
+            />
+          </CarouselItem>
+        );
+      })}
       <CarouselControl
         direction="prev"
         directionText="Previous"

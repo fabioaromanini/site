@@ -10,7 +10,7 @@ export default props => {
       <h4>{name}</h4>
       <div>{description}</div>
       <ul className="reseted-list">
-        {bulletPoints && bulletPoints.map(bp => <li>{bp}</li>)}
+        {bulletPoints && bulletPoints.map(bp => <li key={bp}>{bp}</li>)}
       </ul>
     </div>
   );
