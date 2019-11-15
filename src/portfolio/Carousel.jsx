@@ -4,9 +4,8 @@ import {
   CarouselIndicators,
   CarouselControl,
   CarouselItem,
-  CarouselCaption,
 } from 'reactstrap';
-import Project from './Project';
+import Project from './project';
 
 const items = [
   {
@@ -52,13 +51,9 @@ const CarouselAdapter = props => {
       <CarouselItem
         onExiting={() => setAnimating(true)}
         onExited={() => setAnimating(false)}
-        key={item.src}
+        key={item.key}
       >
         <Project name={item.name} description={item.description} />
-        <CarouselCaption
-          captionText={item.caption}
-          captionHeader={item.caption}
-        />
       </CarouselItem>
     );
   });
