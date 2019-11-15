@@ -6,6 +6,7 @@ import {
   CarouselItem,
   CarouselCaption,
 } from 'reactstrap';
+import Project from './Project';
 
 const items = [
   {
@@ -53,18 +54,7 @@ const CarouselAdapter = props => {
         onExited={() => setAnimating(false)}
         key={item.src}
       >
-        <div
-          style={{
-            textAlign: 'center',
-            maxWidth: '70%',
-            marginLeft: '15%',
-            marginBottom: '1rem',
-            paddingBottom: '23px',
-          }}
-        >
-          <div>{item.name}</div>
-          <div>{item.description}</div>
-        </div>
+        <Project name={item.name} description={item.description} />
         <CarouselCaption
           captionText={item.caption}
           captionHeader={item.caption}
