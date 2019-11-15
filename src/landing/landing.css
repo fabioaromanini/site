@@ -13,7 +13,7 @@
 
 #avatar img {
   border-radius: 50%;
-  max-height: 20vh;
+  max-height: 25vh;
 }
 
 #title {
@@ -41,6 +41,10 @@
 @media screen and (min-width: 910px) {
   #avatar {
     padding: 3em 0 0 0;
+  }
+
+  #avatar img {
+    height: 30vh;
   }
 
   #title h1 {
