@@ -25,6 +25,10 @@
   max-height: 10vh;
 }
 
+#carousel {
+  min-width: 100%;
+}
+
 @media screen and (min-width: 910px) {
   #portfolio-title {
     font-size: 4em;

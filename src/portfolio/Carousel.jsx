@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import {
   Carousel,
   CarouselIndicators,
@@ -7,60 +7,97 @@ import {
   CarouselCaption,
 } from 'reactstrap';
 
-{
-  /* <ul id="itens">
-    <li>
-        <a target="_blank" rel="noopener noreferrer" href="http://lorem.fabioaromanini.com">
-        lorem
-        </a>
-        , a website for generating lorem ipsum texts. Just like this site, it uses react and is
-        deployed on AWS.
-        <br />
-        It's contact system uses AWS Lambda Functions, and emails are sent to a{' '}
-        <a href="https://www.mailinator.com/v3/index.jsp?zone=public&query=contactlorem#/#inboxpane">
-        mailinator account
-        </a>
-        </li>
-      <li>
-      <a
-      target="_blank"
-      rel="noopener noreferrer"
-          href="http://github.com/fabioaromanini/stock-prices-etl"
-          >
-          stock-prices-etl
-        </a>
-        , a serverless etl developed in Google Cloud Platform that extracts stock prices from
-        alphavantage API and loads them into Google BigQuery. If you're interested in this pipeline,
-        contact me using linkedin and I can show you the project!
-        </li>
-      </ul> */
-}
-class MyCarousel extends Component {
-  render() {
-    const activeIndex = 'lorem';
-    return (
-      <Carousel activeIndex={activeIndex}>
-        <CarouselIndicators
-          items={['lorem', 'stock-prices-etl']}
-          activeIndex={activeIndex}
-          onClickHandler={this.goToIndex}
-        />
-        <CarouselItem key={'eae'}>
-          <CarouselCaption captionText={'eae'} captionHeader={'eae'} />
-        </CarouselItem>
-        <CarouselControl
-          direction="prev"
-          directionText="Previous"
-          onClickHandler={this.previous}
-        />
-        <CarouselControl
-          direction="next"
-          directionText="Next"
-          onClickHandler={this.next}
-        />
-      </Carousel>
-    );
-  }
-}
+const items = [
+  {
+    key: 1,
+    name: 'lorem',
+    description: 'asdsadsadsad asd sadsadsa dsada sdasd sadsad',
+  },
+  {
+    key: 2,
+    name: 'stock',
+    description: 'asdsadsadsad asd sadsadsa dsada sdasd sadsad',
+  },
+  {
+    key: 3,
+    name: 'site',
+    description: 'asdsadsadsad asd sadsadsa dsada sdasd sadsad',
+  },
+];
 
-export default MyCarousel;
+const CarouselAdapter = props => {
+  const [activeIndex, setActiveIndex] = useState(0);
+  const [animating, setAnimating] = useState(false);
+
+  const next = () => {
+    if (animating) return;
+    const nextIndex = activeIndex === items.length - 1 ? 0 : activeIndex + 1;
+    setActiveIndex(nextIndex);
+  };
+
+  const previous = () => {
+    if (animating) return;
+    const nextIndex = activeIndex === 0 ? items.length - 1 : activeIndex - 1;
+    setActiveIndex(nextIndex);
+  };
+
+  const goToIndex = newIndex => {
+    if (animating) return;
+    setActiveIndex(newIndex);
+  };
+
+  const slides = items.map(item => {
+    return (
+      <CarouselItem
+        onExiting={() => setAnimating(true)}
+        onExited={() => setAnimating(false)}
+        key={item.src}
+      >
+        <div
+          style={{
+            textAlign: 'center',
+            maxWidth: '70%',
+            marginLeft: '15%',
+            marginBottom: '1rem',
+            paddingBottom: '23px',
+          }}
+        >
+          <div>{item.name}</div>
+          <div>{item.description}</div>
+        </div>
+        <CarouselCaption
+          captionText={item.caption}
+          captionHeader={item.caption}
+        />
+      </CarouselItem>
+    );
+  });
+
+  return (
+    <Carousel
+      activeIndex={activeIndex}
+      next={next}
+      previous={previous}
+      id="carousel"
+    >
+      <CarouselIndicators
+        items={items}
+        activeIndex={activeIndex}
+        onClickHandler={goToIndex}
+      />
+      {slides}
+      <CarouselControl
+        direction="prev"
+        directionText="Previous"
+        onClickHandler={previous}
+      />
+      <CarouselControl
+        direction="next"
+        directionText="Next"
+        onClickHandler={next}
+      />
+    </Carousel>
+  );
+};
+
+export default CarouselAdapter;

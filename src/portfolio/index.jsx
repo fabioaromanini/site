@@ -1,5 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
-import React, { Component } from 'react';
+import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
 
 import Carousel from './Carousel';
@@ -16,8 +16,10 @@ export default () => (
         <h2 id="portfolio-title">portfolio</h2>
       </Col>
     </Row>
-    <Row>
-      <Col>{/* <Carousel /> */}</Col>
+    <Row id="carousel">
+      <Col>
+        <Carousel />
+      </Col>
     </Row>
     <Row id="links">
       <Col xs="6">
