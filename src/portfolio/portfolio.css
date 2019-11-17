@@ -1,7 +1,5 @@
 #portfolio {
   min-height: 100vh;
-  background-color: #353b48;
-  color: #cacaca;
   display: flex;
   flex-direction: column;
   align-items: center;
