@@ -1,57 +1,68 @@
 #landing {
   height: 100vh;
-  background-color: #353b48;
-  color: #cacaca;
+  text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
-  padding: 0 10vw;
+  justify-content: space-between;
 }
 
-.content {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  align-items: center;
-}
-.content p {
-  text-align: center;
+#avatar {
+  padding: 2em 0 0 0;
 }
 
-.about {
-  background-color: #cacaca;
-  border-radius: 1em;
-  color: #353b48;
-  padding-left: 1.5em;
-  padding-right: 1.5em;
-  padding-bottom: 1em;
-  padding-top: 0.5em;
-  margin-bottom: 1em;
+#avatar img {
+  border-radius: 50%;
+  max-height: 25vh;
 }
 
-.about > p {
-  text-align: center;
+#title {
+  padding: 2em 0 0 0;
+}
+
+#about {
+  padding: 0 1em 2em 1em;
 }
 
 #arrow {
-  height: 4em;
+  display: none;
+}
+
+#skills {
+  padding: 0 0 1em 0;
+}
+
+#skills-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
 @media screen and (min-width: 910px) {
-  #landing h1 {
+  #avatar {
+    padding: 3em 0 0 0;
+  }
+
+  #avatar img {
+    height: 30vh;
+  }
+
+  #title h1 {
+    padding: 0 0 0.5em 0;
     font-size: 4em;
   }
 
-  .content {
-    font-size: 2em;
+  #arrow {
+    display: block;
+    height: 4em;
+    margin-bottom: 1em;
   }
 
-  .about {
-    font-size: 2em;
+  #about {
+    max-width: 40vw;
   }
 
-  .content p {
-    max-width: 80%;
+  #skills {
+    font-size: 2em;
   }
 }

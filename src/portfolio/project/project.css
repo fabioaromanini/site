@@ -1,0 +1,23 @@
+.project-container {
+  text-align: center;
+  max-width: 70%;
+  margin-left: 15%;
+  margin-bottom: 10vh;
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.project-container h4 {
+  margin-bottom: 2em;
+}
+
+.reseted-list {
+  text-align: left;
+  padding-top: 2em;
+  padding-left: 0;
+  margin-left: 0;
+  margin-bottom: 0;
+}
