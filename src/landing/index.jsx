@@ -21,8 +21,7 @@ export default () => (
     </Row>
     <Row>
       <Col xs="12" id="about">
-        Software Engineeer with professional experience in data engineering,
-        microservices and cloud infrastructure.
+        A multidisciplinary professional in love with technology, data and software. But even more in love with problem solving and achitecting solutions to everyday challenges. 
       </Col>
     </Row>
     <Row>
